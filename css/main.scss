@@ -1,0 +1,24 @@
+// colors
+$light-00: #f2f2f2;
+$light-01: #f5f2ea;
+$light-02: #fdc886;
+$dark-00: #010000;
+$dark-01: #545454;
+
+// fonts
+$poppins: 'Poppins', sans-serif;
+
+body {
+    font-family: $poppins;
+    background-color: $light-01;
+}
+
+
+.block {
+    padding: 40px 0;
+    .wrapper {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 40px;
+    }
+}

@@ -1,0 +1,13 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f2ea;
+}
+
+.block {
+  padding: 40px 0;
+}
+.block .wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+}/*# sourceMappingURL=main.css.map */
