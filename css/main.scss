@@ -22,3 +22,257 @@ body {
         padding: 0 40px;
     }
 }
+
+.btn {
+    display: block;
+    text-decoration: none;
+    color: $dark-00;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+
+    &.icon {
+        margin-right: 16px;
+        svg {
+            height: 32px;
+            stroke-width: 0.6px;
+        }
+    }
+
+    &.primary {
+        background-color: $light-02;
+        padding: 16px 26px;
+        border-radius: 9px;
+
+        &-alt {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 26px;
+            background-color: transparent;
+            border: 2px solid $light-00;
+            transition: 250ms;
+            font-weight: 700;
+
+            img {
+                height: 28px;
+            }
+
+            &:hover {
+                background-color: $light-00;
+            }
+        }
+    }
+}
+
+.block {
+    
+    &.header {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .col {
+            &.logo {
+                h1 {
+                    font-size: 30px;
+                    font-weight: 800;
+                    margin-bottom: 28px;
+                }
+                
+                a {
+                    display: block;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: $dark-00;
+
+                    &.sales-link {
+                        padding-top: 14px;
+                        border-top: 1px solid $dark-01;
+                        display: flex;
+                        align-items: center;
+                        gap: 28px;
+                        font-size: 15px;
+
+                        svg {
+                            height: 16px;
+                            stroke-width: 2px;
+                        }
+                    }
+                }
+            }
+
+            .guest-menu {
+                display: flex;
+                align-items: center;
+                gap: 28px;
+            }
+
+        }
+    }
+
+    &.login {
+
+        .form-card {
+            background-color: #ffffff;
+            width: 600px;
+            margin: auto;
+            padding: 56px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 26px;
+            box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 2%);
+
+            &__title {
+                text-transform: capitalize;
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 26px;
+            }
+
+            &__copy {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+                margin-bottom: 40px;
+            }
+
+            form {
+                margin-bottom: 40px;
+                .form-group {
+                    position: relative;
+                    margin-bottom: 14px;
+                }
+                
+                input {
+                    width: 100%;
+                    padding: 14px 18px;
+                    box-sizing: border-box;
+                    border-radius: 6px;
+                    border: 2px solid $light-00;
+                    font-family: $poppins;
+                    font-size: 16px;
+                    outline: none;
+
+                    &::placeholder {
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        opacity: 0.85;
+                    }
+                }
+
+                .action {
+                    position: absolute;
+                    text-transform: capitalize;
+                    right: 20px;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-decoration: line-through;
+                    opacity: 0.8;
+                }
+
+                a {
+                    display: block;
+                    margin-top: 28px;
+                    margin-bottom: 38px;
+                    text-decoration: none;
+                    text-align: left;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $dark-00;
+
+                    &::first-letter {
+                        text-transform: uppercase;
+                    }
+                }
+
+                .btn {
+                    width: 100%;
+                }
+            }
+
+            &__optional-tag {
+                position: relative;
+                width: max-content;
+                display: block;
+                margin: auto;
+                margin-bottom: 34px;
+                padding: 0 24px;
+                font-size: 15px;
+                font-weight: 500;
+                color: $dark-00;
+
+                &::before, &::after {
+                    content: "";
+                    width: 18px;
+                    height: 2px;
+                    background-color: $dark-00;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+                
+                &::before {
+                    left: 0;
+                }
+                &::after {
+                    right: 0;
+                }
+            }
+
+            &__social-signup {
+                display: flex;
+                gap: 4px;
+                margin-bottom: 34px;
+                .btn {
+                    flex: 1;
+                    font-size: 14px;
+                }
+            }
+
+            .create-account {
+                font-size: 16px;
+                font-weight: 500;
+
+                a {
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: $dark-00;
+                    font-weight: 600;
+                }
+
+                &::first-letter {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+
+    &.footer {
+        padding-top: 5px;
+        .col {
+            p {
+                text-align: center;
+                font-weight: 500;
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $dark-00;
+                    text-transform: capitalize;
+                    padding-left: 10px;
+                    margin-left: 10px;
+                    border-left: 2px solid $dark-00;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
